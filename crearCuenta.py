@@ -105,8 +105,6 @@ def Registrardatos(cuenta): #agrega la cuenta creada a la lista de cuentas y mue
         print(f"Nombre: {i['Nombre']}, Apellido Paterno: {i['Apellido Paterno']}, Apellido Materno: {i['Apellido Materno']}, RUT: {i['RUT']}")  
 
 
-    return True
-
 
 def existe_cuenta(Nombre, apellido_P, apellido_M): #verifica si ya existe una cuenta con el mismo nombre y apellidos ingresados por el usuario
     for cuenta in cuentas:
