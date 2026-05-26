@@ -118,7 +118,7 @@ def existe_RUT(rut): #valida el rut ingresado por el usuario, verificando que no
     if len(rut) == 0:
         print("El RUT no puede estar vacío.")
         return False
-    if len(rut) < 9 or len(rut) > 10:
+    if len(rut) <= 7 or len(rut) >= 10:
         print("El RUT debe tener entre 8 y 9 caracteres.")
         return False
     if not rut.isalnum():
